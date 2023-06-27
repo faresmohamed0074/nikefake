@@ -1,0 +1,853 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ysabeau Infant', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navbar1{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    height: 40px;
+}
+.navbar1 ul{
+    display: flex;
+    flex-direction: row;
+}
+.navbar1 ul a{
+    margin-right: 10px;
+    margin-top: 3px;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+.pause{
+    margin-left: 4px;
+}
+.navbar1 ul .none{
+    margin-right: 40px;
+}
+.logojordan .jordan img{
+    width: 40px;
+    height: 30px;
+}
+.logojordan .jordan{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    left: 70px;
+    top: 4px;
+}
+
+.navbar2{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar2 .logo{
+    display: flex;
+    height: 50px;
+    width: 70px;
+    position: absolute;
+    left: 60px;
+    top: 50px;
+}
+.navbar2 .choices ul a{
+    margin-right: 15px;
+    font-size: 1px;
+    font-weight: 500px;
+    color: black;
+    font-size: 20px;
+}
+.navbar2 .search input{
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgba(242, 242, 242, 0.518);
+    outline: none;
+    padding-left: 50px;
+}
+.navbar2 .search button{
+    background: transparent;
+    border: none;
+    position: relative;
+    top: 3px;
+    left: -170px;
+    height: 35px;
+    width: 35px;
+} 
+.navbar2 .search button i{
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    color:rgb(176, 178, 179) ;
+}
+.navbar2 .search{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 150px;
+
+}
+.navbar2 .search input::placeholder{
+    position: absolute;
+    top: 6px;
+    left:60px;
+    font-weight: 900;
+    font-size: 18px;
+    vertical-align: top;
+    color: rgb(176, 178, 179);
+}
+.navbar2 .search button:hover{
+    border-radius: 50%;
+    background-color: rgba(242, 242, 242);
+    
+}
+.navbar2 .search button:hover i{
+    color: black;
+}
+
+.navbar2 .search input:hover{
+    background-color: rgba(242, 242, 242);
+}
+.navbar2 .search input:hover::placeholder{
+    color: black;
+}
+.heart{
+    position: absolute;
+    right: 130px;
+}
+.market{
+    position: absolute;
+    right: 70px;
+}
+.heart i{
+    font-size: 28px;
+    color: black;
+}
+.market i{
+    font-size: 28px;
+    color: black;
+}
+.navbar2 .choices ul a:hover{
+    border-bottom: 3px solid black;
+}
+.heart i:hover{
+    text-shadow: 0 0 2px black;
+}
+.market i:hover{
+    text-shadow: 0 0 2px black;
+}
+
+.navbar3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(181, 184, 187, 0.511);
+}
+/* ******************************************************** */
+
+.navbar3 .div1{
+    animation-name: one;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+}
+.navbar3 .div3{
+    position: absolute;
+    left: 0;
+    width: 230px;
+    animation-name: three;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.navbar3 .div2{
+    animation-name: two;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* ******************************************************** */
+
+.navbar3 .div1 p{
+    position: relative;
+    right: -25px;
+}
+.navbar3 .div2 p{
+    position: relative;
+    right: 35px;
+}
+
+
+.navbar3 .div3 p{
+    position: relative;
+    left: 60px;
+}
+/* one */
+@keyframes one{
+    0%{
+        visibility: hidden;
+        position: absolute;
+        right: 0;
+        overflow: hidden;
+    }
+    25%{
+        visibility: visible;
+        position: absolute;
+        right: 25%;
+    }
+    50%{
+        visibility: visible;
+        position: absolute;
+        right: 50%;
+    }
+    75%{
+        visibility: visible;
+        position: absolute;
+        right: 75%;
+        display: none;
+    }
+    100%{
+        visibility: hidden;
+        display: none;
+        white-space: nowrap;
+        position: absolute;
+        right: 100%;
+    }
+}
+/* two */
+@keyframes two{
+    0%{
+        visibility: visible;
+        position: absolute;
+        right: 50%;
+    }
+    25%{
+        visibility: visible;
+        position: absolute;
+        display: none;
+        right: 75%;
+    }
+    50%{
+        visibility: hidden;
+        display: none;
+        white-space: nowrap;
+        position: absolute;
+        right: 100%;
+    }
+    75%{
+        visibility: hidden;
+        position: absolute;
+        right: 0%;
+    }
+    100%{
+        visibility: visible;
+        position: absolute;
+        right: 25%;
+    }
+}
+/* three */
+.navbar3 .div3 {
+    position: absolute;
+    left: 0;
+    width: 230px;
+    animation-name: three;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes three {
+    0% {
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+    }
+    25% {
+        visibility: visible;
+        position: absolute;
+        right: 0;
+    }
+    50% {
+        visibility: visible;
+        position: absolute;
+        right: 25%;
+    }
+    75% {
+        visibility: visible;
+        position: absolute;
+        right: 50%;
+        display: none;
+    }
+    85% {
+        visibility: visible;
+        position: absolute;
+        right: 75%;
+        display: none;
+    }
+    100% {
+        visibility: hidden;
+        display: none;
+        position: absolute;
+        visibility: hidden;
+        display: none;
+        right: 100%;
+    }
+}
+
+
+.navbar4{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar4 img{
+    height: 80px;
+    width: 160px;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    flex-direction: row;
+    z-index: 100004;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar4 .nav li{
+    margin: 5px 25px;
+}
+.navbar4 .nav li a{
+    color: black;
+    font-weight: 600;
+}
+.div5 a img{
+    width: 1400px;
+    height: 600px;
+}
+.div5{
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div5 .caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+}
+.div5 .caption h1{
+    font-family: 'Montserrat', sans-serif;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+}
+.btn a{
+    font-weight: 900;
+    color: azure;
+    outline: none;
+    background-color: black;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 9px;
+    position: relative;
+    top: 70px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.grid{
+    position: relative;
+    width: 100%;
+    margin: 40px;
+    top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,700px);
+    column-gap: 30px;
+}
+.capton{
+    margin: 40px;
+    position: relative;
+    top: 100px;
+}
+.grid .one a img{
+    height: 1020px;
+    width: 700px;
+}
+
+.grid .two a img{
+    height: 500px;
+    width: 700px;
+}
+.grid .three a img{
+    height: 500px;
+    width: 600px;
+}
+.grid .three a img{
+    grid-row: 2;
+}
+.capton1 a{
+    position: absolute;
+    left: 70px;
+    bottom: 140px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 9px;
+    font-family: 'Montserrat', sans-serif;
+}
+.capton1 h3{
+    position: absolute;
+    left: 70px;
+    bottom: 200px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+
+}
+.grid{
+    max-width: 500px;
+}
+.two .capton2 a{
+    position: relative;
+    left: 60px;
+    bottom: 80px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.two .capton2 h3{
+    position: relative;
+    left: 70px;
+    bottom: 100px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.two .three a img{
+    height: 500px;
+    width: 700px;
+    position: relative;
+    top: -50px;
+}
+.two .three .capton3 a{
+    position: relative;
+    left: 60px;
+    bottom: 140px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+.two .three .capton3 h3{
+    position: relative;
+    left: 60px;
+    bottom: 160px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+.two{
+    width: 500px;
+    margin: auto;
+    position: relative;
+    left: -90px;
+}
+/* ************************************************************ */
+.grid2 .eleven a img{
+    height: 550px;
+    width: 470px;
+}
+.grid2 .caption p{
+    position: absolute;
+    left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+.grid2 .eleven{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    margin: 40px 0px 40px 10px;
+    width: 460px;
+    position: absolute;
+    left: 10px;
+}
+.grid2{
+    width: 200px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+
+}
+.grid2 .eleven  a.txt{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    width: 50px;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.grid2 .eleven  a.btn{
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+}
+/* ****************************************************************** */
+.grid2 .twenty a img{
+    height: 550px;
+    width: 470px;
+}
+.grid2 .twenty{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    margin: 40px 10px;
+    width: 460px;
+    position: absolute;
+    left: 500px ;
+}
+.grid2 .twenty  a.txt{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    width: 50px;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.grid2 .twenty  a.btn{
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+}
+/* ***************************************************** */
+.grid2 .thirty a img{
+    height: 550px;
+    width: 470px;
+}
+.grid2 .thirty{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    margin: 40px 0px 40px 0px;
+    width: 460px;
+    position: absolute;
+    left: 1000px ;
+}
+.grid2 .thirty  a.txt{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    width: 50px;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.grid2 .thirty  a.btn{
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+}
+/* ************************************************************* */
+.caption11{
+    margin: 40px 40px 50px 70px;
+}
+.caption11 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+}
+.splite{
+    width: 100%;
+    height: 710px ;
+}
+.splite a{
+    width: 680px;
+    height: 700px;
+}
+.splite .splite2{
+    width: 680px;
+    height: 700px;
+}
+.splite a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 70px;
+    margin-bottom: 40px;
+}
+.splite a img{
+    width: 670px;
+    height: 700px;
+}
+.splite a.capton1{
+    position: relative;
+    left: 60px;
+    top: -150px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 10px 10px 25px;
+    font-family: 'Montserrat', sans-serif
+}
+.splite h2.ono{
+    position: relative;
+    left: 130px;
+    top: -180px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: fit-content;
+}
+/* **************************** */
+.splite .splite1{
+    position: relative;
+    left: 770px;
+    top: -700px ;
+    width:700px ;
+    height: 700px;
+    overflow: hidden;
+}
+.splite .splite1 a img{
+    width: 670px;
+    height: 700px;
+    position: relative;
+}
+.splite .splite1 h2.ono{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    position: relative;
+    left: 20px;
+}
+
+.splite .splite1 a.capton2{
+    position: relative;
+    bottom:  160px;
+    right: 50px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 10px 10px 25px;
+    font-family: 'Montserrat', sans-serif
+}
+/* *************************************************************** */
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 400px;
+    margin-bottom:20px ;
+    margin-top: 90px;
+    margin-left: auto;
+}
+.footer .coulmn1 a{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.footer .coulmn1{
+    position: absolute;
+    left: 0;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+}
+.footer .coulmn1 a{
+    padding-left: 10px;
+    font-family:  TG,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    width: fit-content;
+}
+
+.footer .coulmn1 a.a{
+    margin-top: 30px;
+}
+.footer .location{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    position: relative;
+    bottom: 0;
+    left: -60px;
+    white-space: nowrap;
+    width: 100%;
+    height: 60px;
+}
+.footer .location a{
+    width: 100%;
+    padding-left: 10px;
+}
+.footer .location a i{
+    font-size: 14px;
+    margin-left: 70px;
+}
+.footer .location h2{
+    color: white;
+    font-size: medium;
+    margin-left: 10px;
+    white-space: nowrap;
+    position: relative;
+    bottom: 5px;
+
+}
+/* ****************************************** */
+.coulmn2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 600px;
+    width: fit-content;
+    height: 400px;
+}
+.coulmn2 ul{
+    margin: 20px;
+    width: fit-content;
+    height: 400px;
+}
+.coulmn2 ul li{
+    margin: 20px 0px;
+    width: fit-content;
+    height: 30px;
+}
+.coulmn2 ul li a{
+    padding-left: 10px;
+    font-family:  TG,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: rgb(64, 64, 64);
+}
+.coulmn2 ul li a.a{
+        color: white;
+}
+/**************************************/
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 40px;
+    width: fit-content;
+    position: relative;
+    top: -350px;
+    right: -1120px;
+}
+.social ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    height:400px ;
+    width: fit-content;
+    position: relative;
+}
+.social ul li{
+    margin: 20px 20px;
+    height: fit-content;
+
+}
+.social ul li a{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(64, 64, 64);
+}
+.social ul li a i{
+    text-align: center;
+    padding: 11px;
+}
